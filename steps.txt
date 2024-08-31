@@ -1,0 +1,13 @@
+if conda not found but cond installed:  source ~/anaconda3/etc/profile.d/conda.sh
+conda create -n <environment_name> python==3.9.0
+conda install -c conda-forge bempp-cl
+
+conda activate <myenv>
+source activate <environment name> before launch jupyter notebook
+
+if problems with numpy: install : python3 -m pip install ipykernel
+and    python -m ipykernel install --user --name python39_env --display-name "Python (python39_env)"
+after that open notebook and choose our kernel
+
+conda install python=3.9
+conda install bempp-cl=0.2.4 pandas=1.4.3 numpy=1.21 (or 1.22.4)
